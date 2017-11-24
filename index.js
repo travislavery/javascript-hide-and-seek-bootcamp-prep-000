@@ -25,7 +25,7 @@ function deepestChild() {
   var nodeList = [];
   while(current.length>0) {
     for (var i=0; i<current.length; i++) {
-      var nextChild = current[i].children
+      var nextChild = current[i].children[0]
       
       if (nextChild) {
         //console.log(nextChild)
