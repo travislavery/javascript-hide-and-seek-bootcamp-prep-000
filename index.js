@@ -25,10 +25,10 @@ function deepestChild() {
   var nodeList = [];
   while(current.length>0) {
     for (var i=0; i<current.length; i++) {
-      var nextChild = current[i].children[0]
-      
+      var nextChild = current[0].children[i]
       if (nextChild) {
         nodeList.push(nextChild)
+        current.splice(0, 1)
         //console.log(nextChild)
       //  if(nextChild.children.length>0){
           //for (var j = 0; j<nextChild.length;j++) {
