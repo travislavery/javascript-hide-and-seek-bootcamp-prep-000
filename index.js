@@ -38,7 +38,7 @@ function deepestChild() {
        // }
       } else {
         console.log('No children')
-        splice(current[i], 1)
+        current.splice(i, 1)
       }
     }
     current = nodeList
