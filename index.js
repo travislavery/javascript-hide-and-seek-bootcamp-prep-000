@@ -42,7 +42,11 @@ function deepestChild() {
       }
     }
     if (current.length===1) {
-      
+      if (current[0].children === []) {
+        return current[0]
+      } else {
+        nextChildCheck(current)
+      }
     }
     current = nodeList
     nodeList = []
@@ -50,6 +54,6 @@ function deepestChild() {
   return current
 }
 
-function nextChildCheck() {
+function nextChildCheck(listToCheck) {
   
 }
