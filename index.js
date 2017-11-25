@@ -34,20 +34,3 @@ function deepestChild() {
     }
   }
 }
-
-function nextChildCheck(listToCheck) {
-  
-    var nextChild = current[0].children[i]
-    if (nextChild) {
-      current.push(nextChild)
-      //console.log(nextChild)
-    //  if(nextChild.children.length>0){
-        //for (var j = 0; j<nextChild.length;j++) {
-          //console.log(nextChild.children)
-          //nodeList.push(nextChild.children[j])
-       // }
-     // }
-    } else {
-      console.log('No children')
-  }
-}
