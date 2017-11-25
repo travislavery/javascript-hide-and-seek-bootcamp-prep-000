@@ -20,24 +20,19 @@ function increaseRankBy(n) {
 
 function deepestChild() {
   var grandNode = document.querySelector('#grand-node');
-  var deepest = '';
   var current = grandNode.children;
   var nodeList = [];
   while(current.length>0) {
-    
-    // for (var i=0; i<current.length; i++) {
-      
-    // }
-    current.splice()
     if (current.length===1) {
       if (current[0].children.length === 0) {
         return current[0]
-      } else {
-        for (var i=0; i<current[0].children.length; i++) {
-          current.push(current[0].children[i])
-        }
-        current.splice(0,1);
       }
+    } else {
+      for (var i=0; i<current[0].children.length; i++) {
+        current.push(current[0].children[i])
+      }
+      current.splice(0,1);
+    }
     }
     if (current[0].children.length > 0) {
       
