@@ -32,14 +32,7 @@ function deepestChild() {
       }
       current.splice(0,1);
     }
-    }
-    if (current[0].children.length > 0) {
-      
-    }
-    current = nodeList
-    nodeList = []
-  } 
-  return current
+  }
 }
 
 function nextChildCheck(listToCheck) {
