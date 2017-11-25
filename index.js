@@ -24,7 +24,9 @@ function deepestChild() {
   var current = grandNode.children;
   var nodeList = [];
   while(current.length>0) {
-    current[0].children
+    if (current[0].children.length > 0) {
+      
+    }
     // for (var i=0; i<current.length; i++) {
       
     // }
