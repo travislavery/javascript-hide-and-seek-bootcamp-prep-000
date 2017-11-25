@@ -33,6 +33,9 @@ function deepestChild() {
       if (current[0].children.length === 0) {
         return current[0]
       } else {
+        for (var i=0; i<current[0].length; i++) {
+          
+        }
         nextChildCheck(current)
       }
     }
