@@ -25,7 +25,6 @@ function deepestChild() {
   var nodeList = [];
   while(current.length>0) {
     
-    }
     if (current.length===1) {
       if (current[0].children === []) {
         return current[0]
@@ -56,4 +55,5 @@ function nextChildCheck(listToCheck) {
       console.log('No children')
       current.splice(i, 1)
     }
+  }
 }
