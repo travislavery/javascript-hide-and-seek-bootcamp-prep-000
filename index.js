@@ -36,7 +36,7 @@ function deepestChild() {
         for (var i=0; i<current[0].children.length; i++) {
           current.push(current[0].children[i])
         }
-        nextChildCheck(current)
+        current.splice(0,1);
       }
     }
     if (current[0].children.length > 0) {
