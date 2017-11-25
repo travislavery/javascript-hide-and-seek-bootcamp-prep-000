@@ -31,8 +31,8 @@ function deepestChild() {
         current.splice(0,1);
       }
     } else {
-      for (var i=0; i<current[0].children.length; i++) {
-        current.push(current[0].children[i])
+      for (var j=0; j<current[0].children.length; j++) {
+        current.push(current[0].children[j])
       }
       current.splice(0,1);
     }
