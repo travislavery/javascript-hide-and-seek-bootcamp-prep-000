@@ -46,3 +46,7 @@ function deepestChild() {
   } 
   return current
 }
+
+function nextChildCheck() {
+  
+}
