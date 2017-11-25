@@ -34,7 +34,7 @@ function deepestChild() {
         return current[0]
       } else {
         for (var i=0; i<current[0].children.length; i++) {
-          
+          current.push(current[0].children[i])
         }
         nextChildCheck(current)
       }
