@@ -41,6 +41,9 @@ function deepestChild() {
         current.splice(i, 1)
       }
     }
+    if (current.length===1) {
+      
+    }
     current = nodeList
     nodeList = []
   } 
