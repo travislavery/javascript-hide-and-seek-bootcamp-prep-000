@@ -24,6 +24,11 @@ function deepestChild() {
     if (current.length===1) {
       if (current[0].children.length === 0) {
         return current[0]
+      } else {
+        for (var i=0; i<current[0].children.length; i++) {
+          current.push(current[0].children[i])
+        }
+        current.splice(0,1);
       }
     } else {
       for (var i=0; i<current[0].children.length; i++) {
