@@ -24,9 +24,11 @@ function deepestChild() {
   var current = grandNode.children;
   var nodeList = [];
   while(current.length>0) {
-    
+    for (var i=0; i<current.length; i++) {
+      
+    }
     if (current.length===1) {
-      if (current[0].children === []) {
+      if (current[0].children.length === 0) {
         return current[0]
       } else {
         nextChildCheck(current)
@@ -39,7 +41,7 @@ function deepestChild() {
 }
 
 function nextChildCheck(listToCheck) {
-  for (var i=0; i<current.length; i++) {
+  
     var nextChild = current[0].children[i]
     if (nextChild) {
       nodeList.push(nextChild)
@@ -54,6 +56,6 @@ function nextChildCheck(listToCheck) {
     } else {
       console.log('No children')
       current.splice(i, 1)
-    }
+    
   }
 }
